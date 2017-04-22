@@ -1,0 +1,130 @@
+<html>
+<body>
+
+<div>
+<h3> Find donor details by id </h3> 
+<form action="run.php" method="post" target="_blank">
+Donor id: <input type="number" name="donor_id"><br>
+<input name="form1" type="submit">
+</form>
+</div>
+<hr>
+
+<div>
+<h3> Find bank details by location id </h3> 
+<form action="run.php" method="post" target="_blank">
+Location code: <input type="number" name="location_code"><br>
+<input name="form2" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3> Find requirement of given blood group </h3> 
+<form action="run.php" method="post" target="_blank">
+Blood Group: <input type="text" name="blood_grp"><br>
+<input name="form3" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3> Rank by blood donated </h3> 
+<form action="run.php" method="post" target="_blank">
+<input name="form4" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3> Rank by blood needed </h3> 
+<form action="run.php" method="post" target="_blank">
+<input name="form5" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3> Rank blood group by need </h3> 
+<form action="run.php" method="post" target="_blank">
+<input name="form6" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3> Add new patient</h3> 
+<form action="run.php" method="post" target="_blank">
+Priority: <input type="text" name="rank"><br><br>
+Name: <input type="text" name="name"><br><br>
+Blood_grp_needed: <input type="text" name="blood_grp_needed"><br><br>
+date: <input type="date" name="date"><br><br>
+Quantity Needed: <input type="number" step="0.001" name="quant_needed"><br><br>
+<input name="form7" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3> Show doctor who took blood</h3> 
+<form action="run.php" method="post" target="_blank">
+donor_id: <input type="number" name="did"><br>
+<input name="form8" type="submit">
+</form>
+</div>
+<hr>
+
+Complex Queries<br>
+<hr>
+<div>
+<h3> Find names of all doctors with rating better than some
+other doctor with a given name</h3> 
+<form action="run.php" method="post" target="_blank">
+Doctor Name: <input type="text" name="dname"><br>
+<input name="form9" type="submit">
+</form>
+</div>
+<hr>
+
+<div>
+<h3> Find all doctors who are older than the oldest doctor with a given rating</h3> 
+<form action="run.php" method="post" target="_blank">
+Rating: <input type="number" name="rating"><br>
+<input name="form10" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3>Find blood groups present at all banks </h3> 
+<form action="run.php" method="post" target="_blank">
+<input name="form11" type="submit">
+</form>
+</div>
+<hr>
+
+<div>
+<h3>Find all donors who have an appointment except those with a
+given blood group </h3> 
+<form action="run.php" method="post" target="_blank">
+Blood Group: <input name="bg" type="text">
+<input name="form12" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3>Find the age of the youngest doctor who is eligible to perform a
+surgery(user will give the amount of experience(qualification) necessary) for each rating level with at
+least n doctors</h3> 
+<form action="run.php" method="post" target="_blank">
+N: <input name="n" type="number"><br>
+Min Qualification: <input name="mq" type="number">
+<input name="form13" type="submit">
+</form>
+</div>
+<hr>
+<div>
+<h3>Find transport possible from given bank id </h3> 
+<form action="run.php" method="post" target="_blank">
+Bank id: <input name="bid" type="number"><br>
+<input name="form14" type="submit">
+</form>
+</div>
+<hr>
+
+
+</body>
+</html>
